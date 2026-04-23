@@ -12,8 +12,15 @@ export const counterSlice = createSlice({
     decrement: (state) => {
       state.count -= 1;
     },
+    incrementMultiple: (state, action) => {
+      state.count += Number(action.payload);
+    },
+    decrementMultiple: (state, action) => {
+      state.count -= Number(action.payload);
+    },
   },
 });
 
-export const { increment, decrement } = counterSlice.actions;
+export const { increment, decrement, incrementMultiple, decrementMultiple } =
+  counterSlice.actions;
 export const counterReducer = counterSlice.reducer;
