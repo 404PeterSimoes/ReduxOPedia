@@ -8,5 +8,3 @@ export const store = configureStore({
     destinationStore: destinationReducer,
   },
 });
-
-console.log(store.getState());
