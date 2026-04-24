@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
   destinations: [
     {
-      name: 'Kong Kong',
+      name: 'Hong Kong',
       days: 7,
       fact: "World's longest covered escalator",
     },
